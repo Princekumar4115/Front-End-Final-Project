@@ -1,3 +1,57 @@
+# 📊 Sales Dashboard - Atomic Design MVP
+
+A high-performance Sales Dashboard built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**. This project follows the **Atomic Design Methodology** to ensure a scalable, modular, and maintainable component architecture.
+
+🔗 **Live Demo:** [https://front-end-final-project-ochre.vercel.app/dashboard](https://front-end-final-project-ochre.vercel.app/dashboard)
+
+---
+
+## 🚀 Key Features
+
+- **Interactive Charts:** Visualizing sales performance for 2022, 2023, and 2024 using Recharts.
+- **Atomic Structural Principle:** Clean separation of concerns through Atoms, Molecules, Organisms, Templates, and Pages.
+- **Mock Data Engine:** Realistic retail sales data simulation (inspired by Kaggle retail datasets).
+- **Custom Filtering:** Dynamic threshold inputs to filter sales data in real-time.
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop using Tailwind CSS.
+- **Multiple Views:** Switch between Bar, Line, and Pie chart types to gain different insights.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 15 (App Router)](https://nextjs.org/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Charts:** [Recharts](https://recharts.org/)
+- **Icons:** [Lucide-React](https://lucide.dev/)
+
+---
+
+## 🏗️ Atomic Design Structure
+
+The project is organized into five distinct levels to maximize reusability:
+
+1.  **Atoms**: Basic building blocks (Buttons, Inputs, Badges, Typography).
+2.  **Molecules**: Groups of atoms working together (Search bars, Form fields, Filter groups).
+3.  **Organisms**: Complex UI sections (The Sales Chart Widget, Navigation Bars, Sidebar).
+4.  **Templates**: Page-level layouts that define the structure (Dashboard Layout).
+5.  **Pages**: Specific routes that populate templates with real/mock data.
+
+---
+
+## 📂 Project Directory
+
+```text
+src/
+├── app/                  # Next.js App Router (Pages & API)
+├── components/           # Atomic Design components
+│   ├── atoms/            # Smallest units
+│   ├── molecules/        # Combinations of atoms
+│   ├── organisms/        # Complex widgets/sections
+│   └── templates/        # Page layouts
+├── data/                 # Mock sales data (2022-2024)
+└── styles/               # Global Tailwind styles
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
